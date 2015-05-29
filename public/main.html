@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "ContactsApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<base href = "/">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
+</head>
+	<body>
+		<div class = "container">
+			<div class = "page-header">
+				<h1>Contacts</h1>
+			</div>
+			
+			<div class= "row">
+				<div class='col-sm-12' ng-include='"views/nav.html"'></div>
+			</div>
+
+
+			<div class = "row"> 
+				<!-- content of this div changes as the route changes -->
+				<div class = "col-sm-12" ng-view></div> 
+			</div>
+		</div>
+		<script src = "lib/jquery/dist/jquery.min.js"></script>
+		<script src = "lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src = "lib/angular/angular.min.js"></script>
+		<script src = "lib/angular-route/angular-route.min.js"></script>
+		<script src = "lib/angular-resource/angular-resource.min.js"></script>
+		<script src = "lib/angular-messages/angular-messages.min.js"></script>
+		<script src = "src/app.js"></script>
+		<script src = "src/controller.js"></script>
+		<script src = "src/factories.js"></script>
+		<script src = "src/filter.js"></script>
+		<script src = "src/directives.js"></script>
+	</body>
+</html>
